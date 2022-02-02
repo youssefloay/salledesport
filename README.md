@@ -59,3 +59,6 @@ On unstage donc avec :
 
 On les ajoute au .gitignore
 `/.idea/*`
+
+Pour écrire cette ligne dans le README.md, on a créé une nouvelle branche et switché dessus avec `git checkout -b dev`
+On commit le modifications, puis on fait : `git merge dev`
