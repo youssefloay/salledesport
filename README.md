@@ -107,3 +107,13 @@ On commit le travail effectué puis :
 git checkout dev
 git merge feature/{?}
 ````
+
+### Création d'une release
+
+Après avoir mergé la branche dev sur la branche de production (main), on a pu créer une pré-release sur GitHub.
+On a créé un tag en suivant le sémantic versionning, puis fait un changelog. 
+
+### Création d'un hotfix
+
+Pour éditer ce README.md, nous avons créé une branche hotfix provenant de main.
+On la merge ensuite puis on push sur le repo distant.
