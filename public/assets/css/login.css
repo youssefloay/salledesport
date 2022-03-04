@@ -30,7 +30,7 @@ body {
 }
 
 .frame-long {
-  height: 615px;
+  height: 700px;
 }
 
 .back-menu {
@@ -72,7 +72,7 @@ li {
   text-align: left;
   text-transform: uppercase;
   padding-right: 10px;
-  color: #ffffff;
+  color:rgba(255,255,255,.3);
 }
 
 .signin-active a {
@@ -307,6 +307,10 @@ label {
 [type="checkbox"]:focus + label:before {
   box-sizing: border-box;
   margin-top: -1px;
+}
+
+.btn{
+  border-radius: 0;
 }
 
 .btn-signup {
