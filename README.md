@@ -117,3 +117,14 @@ On a créé un tag en suivant le sémantic versionning, puis fait un changelog.
 
 Pour éditer ce README.md, nous avons créé une branche hotfix provenant de main.
 On la merge ensuite puis on push sur le repo distant.
+
+### Création d'une pull request & GitHub Actions
+
+Pour tester les GitHub Actions, nous avons choisi un workflow de continuous integration 'Symfony'. 
+Il permet d'effectuer des tests lorsqu'un évènement est déclenché : ici un push sur la branche de production.
+Nous n'avons pas configuré l'action, mais observé les différents "jobs" qui sont pré-créés par GitHub. 
+
+Nous avons ensuite créé le fichier dans une nouvelle branche 'symfony-action', et effectué une pull request sur la branche main (nous aurions dû le faire sur la branche dev et faire une release plus tard).
+Erica a été désignée comme reviewer, et a pu effectuer des commentaires sur la pull request. Notamment : un des jobs (créé par défaut) ne passait pas car nous n'avions pas configuré phpunit.
+
+Après modification du fichier symfony.yml, les checks sont passés et la pull request a pu être mergé et fermé.
